@@ -1,11 +1,8 @@
 <?php
-     $conect_ma_BD = new PDO('mysql:host=localhost;dbname=Ecole','sakha','traore', array(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
-    if($conect_ma_BD->connect_errno) die('Un probleme est survenu lors de la tentative de connexion a la BDD :' .$conect_ma_BD->connect_errno);
+/*LIAISON AVEC LE FORMULAIRE A LA BASE DE DONNEE*/
+$pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite','UBUNTU','mamy', array
+(PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
+$contenu = '';
 
-    session_start();
+//require_once('fonction.inc.php')//
 
-    define("RACINE_SITE","/Ecole_la_Reussite/");
-
-    $contenu = '';
-    /*require_once('fonction.inc.php');*/
-?>

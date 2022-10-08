@@ -15,5 +15,9 @@ date_naissance date NOT NULL,
 lieu_naissance varchar(80) NOT NULL,
 date_soumission date NOT NULL,
 sexe varchar(80) NOT NULL
+<<<<<<< HEAD
 
 );
+=======
+);
+>>>>>>> 7fec807d1b37bd32d2b039fb4b869dd9593b45f4
