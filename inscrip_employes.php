@@ -10,6 +10,8 @@ catch(Exception $e)
 	// En cas d'erreur, on affiche un message et on arrête tout
         die('Erreur : '.$e->getMessage());
 }
+include('inclusion/fonction.inc.php');
+$contenu ="";
 
   // Vérifier si le formulaire est soumis 
   @$passeword = $_POST['passeword'];
@@ -65,7 +67,7 @@ catch(Exception $e)
                 if($ins->rowCount()!= 0)
                 {
                     $contenu .= "Vous avez deja un compte";
-                    echo "$contenu";
+                    echo "$contenu ";
                 }
                 else
                 {
@@ -78,7 +80,7 @@ catch(Exception $e)
                      '$_POST[profession]', '$_POST[nationalite]', '$_POST[date_naissance]', '$_POST[lieu_naissance]', '$_POST[date_soumission]','$_POST[sexe]')");
                     $contenu .= "Inscription reussie";
                    
-                    echo 'Vous êtes inscrit . <a href=""></a>';
+                    echo 'Vous êtes inscrit style="color:red";. <a href=""></a>';
                  
                     echo "$contenu";
                 }
