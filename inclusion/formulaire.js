@@ -57,6 +57,10 @@ function afficher(){
                             alert("Veuillez entrer votre nationalite!");
                             document.getElementById('nationalite').focus();
                             return false; }
+                            if(document.getElementById('pass').value == "") {
+                              alert("Veuillez entrer votre mot de pass!");
+                              document.getElementById('pass').focus();
+                              return false; }
     
 
     if(document.getElementById('message').value == "") {

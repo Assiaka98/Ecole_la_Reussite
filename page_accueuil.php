@@ -20,9 +20,9 @@
                     <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
                     <li class="li"><a href="">Contact</a></li>
                    
-                    <li class="li"><a href="page_connexion.php">connexion</a></li>
-                    <li class="li"><a href="inscrip_employes.php">Employe</a></li>
-                    <li class="li"><a href="#">Eleve</a></li>
+                    <li class="li"><a href="interf_employe.php">employe</a></li>
+                    <li class="li"><a href="inscrip_employes.php">eleve</a></li>
+                    <li class="li"><a href="#">information</a></li>
                     <li class="li" ><a href="#" class="active">Accueil</a></li>
                     
                 </ul>

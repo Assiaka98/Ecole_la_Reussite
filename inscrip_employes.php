@@ -1,3 +1,4 @@
+
  <?php
  try
 {
@@ -53,6 +54,7 @@ catch(Exception $e)
                }   
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,12 +62,14 @@ catch(Exception $e)
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inclusion/CSS/style.css">
+
     <title>INSCRIPTION EMPLOYE</title>
 </head>
 <body>
     <div class="container">
    <div class="a"> <h1>INSCRIPTION EMPLOYE</h1></div>
      
+
        <form class="box" id="myForm" method="POST" action="">
 
 <div> <label for="PASSEWORD"><h4>PASSEWORD</h4></label>
@@ -113,5 +117,6 @@ catch(Exception $e)
 <?php if(!empty($message)){ ?>
         <div id="message"><?php echo $message ?></div>
         <?php } ?>
+
 </body>
 </html>
