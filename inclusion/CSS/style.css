@@ -36,6 +36,12 @@ body{
     flex-wrap: wrap; 
     background-color:white;
 }
+#supprimer{
+    background-color: red;
+}
+#modifier{
+    background-color: blue;
+}
 
 .box{
     margin-top: 2px;

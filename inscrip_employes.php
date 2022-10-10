@@ -2,7 +2,7 @@
  try
 {
 	// On se connecte à MySQL
-	$pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite;charset=utf8', 'UBUNTU', 'mamy');
+	$pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite;charset=utf8','UBUNTU','mamy');
   
 }
 catch(Exception $e)
@@ -50,7 +50,8 @@ catch(Exception $e)
                  VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
                 $ins->execute(array($passeword,$nom,$prenom,$numero,$email,$adresse,$profession,$nationalite,$date_naissance,$lieu_naissance,$date_soumission,$sexe));
                ; }}
-               }              
+               }   
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
