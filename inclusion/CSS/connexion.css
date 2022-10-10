@@ -31,7 +31,8 @@ background: #5A87BC;
     height: 100%;
     
     top: 0px;
-    background: #dde0e2;   
+    background-image: url("../connexion.jpg");
+    background-size: cover;   
 }
 img{
     border-radius: 30px;
@@ -42,18 +43,19 @@ height: 90px;
     
 }
 .container{
- margin-left: 37%;
+ margin-left: 32%;
+  padding-top: 20px;
+font-size: 22px;
   
-font-size: 18px;
-    padding-left: 72px;
     box-sizing: border-box;
 display: flex;
+justify-content: center;
+width: 43%;
+height: 55%;
 
-width: 522px;
-height: 258px;
-
-
-background: #FDFEFF;
+border-bottom-left-radius: 15px;
+border-bottom-right-radius: 15px;
+background:linear-gradient(rgba(255, 255, 255, 0.747),rgba(252, 249, 249, 0.452));
 border: 2px solid #5A87BC;
 }
 
@@ -61,10 +63,10 @@ border: 2px solid #5A87BC;
 
     box-sizing: border-box;
 color: whITE;
-    position: absolute;
+    
     width: 191px;
     height: 34px;
-    
+    margin-left: 20%;
     background: #5A87BC;
     border: 1px solid #5A87BC;
     border-radius: 6px; 
@@ -73,9 +75,9 @@ color: whITE;
 .case{ 
     box-sizing: border-box;
 margin-bottom: 25px;
-position: absolute;
-width: 366px;
-height: 34px;
+
+width: 400px;
+height: 44px;
 
 background: #FFFDFD;
 border: 1px solid #5A87BC;
@@ -129,7 +131,7 @@ nav ul li{
     text-decoration: none;
 }
 h1{
-    color: #5A87BC;
+    color: #f4f6f8;
     text-align: center;
 }
 .tex{
@@ -176,17 +178,26 @@ footer{
     background-color: black;
     width: auto;
     height: 100px;
-    margin-top: 20%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-bottom: 0px;
+   margin-bottom: 800px;
+   
 }
 body{
     margin: 0;
 }
 .description{
-    margin-left: 37%;
+display: flex;
+justify-content: center;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+background: #5A87BC;
+border: 2px solid #5A87BC;
+width: 42.7%;
+    height: 7%;
+    margin-left: 32%;
     display: flex;
 }
 

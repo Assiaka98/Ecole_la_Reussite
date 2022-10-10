@@ -35,7 +35,7 @@
             <div>
             <h1><?=$bienvenue?></h1>
             <p class="tex">
-            <img src=" ../inclusion/ELEVE2.jpeg" alt="">  
+            
             </p>
             </div>
             <div class="a">
@@ -187,6 +187,7 @@ footer{
 }
 body{
     margin: 0;
+    background-image: url("../inclusion/connexion.jpg");
 }
 .description{
     display: flex;
