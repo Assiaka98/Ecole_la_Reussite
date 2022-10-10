@@ -1,9 +1,8 @@
 
  <?php
 include('inclusion/BD.inc.php');
-
 include('inclusion/fonction.inc.php');
-$contenu = "";
+$contenu ="";
   // Vérifier si le formulaire est soumis 
   @$passeword = $_POST['passeword'];
     @$nom = $_POST['nom']; 
