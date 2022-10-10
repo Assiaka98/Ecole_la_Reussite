@@ -1,16 +1,7 @@
 
  <?php
- try
-{
-	// On se connecte à MySQL
-	$pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite;charset=utf8','UBUNTU','mamy');
-  
-}
-catch(Exception $e)
-{
-	// En cas d'erreur, on affiche un message et on arrête tout
-        die('Erreur : '.$e->getMessage());
-}
+include('inclusion/BD.inc.php');
+$contenu="";
 
   // Vérifier si le formulaire est soumis 
   @$passeword = $_POST['passeword'];
@@ -52,41 +43,39 @@ catch(Exception $e)
                 $ins->execute(array($passeword,$nom,$prenom,$numero,$email,$adresse,$profession,$nationalite,$date_naissance,$lieu_naissance,$date_soumission,$sexe));
                ; }}
                } 
-               
 
-$message="";
-
-    if(isset($_POST['email'],$_POST['passeword']))
+                  if($_POST)
     {
-
-$user = trim($_POST['email']);
-$pass = trim($_POST['passeword']);
-$profession = trim($_POST['profession']);
-try{
-$sth = $pdo->prepare(" SELECT * FROM employe WHERE email !='".$user."' AND passeword != '".$pass."' AND profession != '".$profession."'"); 
-$sth->execute();
-$ins = $sth->fetchAll(PDO::FETCH_ASSOC); 
-if(count($ins) !==0){        
-  $message="Vous n'êtes pas dans la base de données, inscrivez-vous";
-    }
-    else{
-
-        if($profession=='professeur'){
-            header("location:profil/professeur.php");
-            
-
+        $verif_caractere = preg_match('#^[a-zA-Z0-9.-]+$#', $_POST['email']);/* preg_match fonction qui permet de verifier les caracteres */
+        if(!$verif_caractere && (strlen($_POST['email']) < 3 || strlen($_POST['email']) > 20) ) 
+        {
+           $contenu .= "Veuillez saisir un mail correcte S.V.P";
         }
-        else if($profession=='secretaire'){
-            header("location:profil/secretaire.php");
-        }
-    }
-
-
-}
-catch(PDOException $e){ echo ("Erreur:".$e->getMessage());}
- }
-  
-
+        else
+            {
+                $ins = executeRequete("SELECT * FROM employe WHERE email = '$_POST[email]'");
+                if($ins->rowCount()!= 0)
+                {
+                    $contenu .= "Vous avez deja un compte";
+                    echo "$contenu";
+                }
+                else
+                {
+                    foreach($_POST as $indice => $valeur)
+                    {
+                        $_POST[$indice] = htmlEntities(addSlashes($valeur));
+                    }
+                    executeRequete("INSERT INTO employe (passeword,nom,prenom,numero,email,adresse,profession,nationalite,date_naissance,lieu_naissance,date_soumission,sexe) 
+                    VALUES ('$_POST[passeword]','$_POST[nom]','$_POST[prenom]','$_POST[numero]', '$_POST[email]', '$_POST[adresse]', 
+                     '$_POST[profession]', '$_POST[nationalite]', '$_POST[date_naissance]', '$_POST[lieu_naissance]', '$_POST[date_soumission]','$_POST[sexe]')");
+                    $contenu .= "Inscription reussie";
+                   
+                    echo 'Vous êtes inscrit . <a href=""></a>';
+                 
+                    echo "$contenu";
+                }
+            }
+     }
 ?>
 
 <!DOCTYPE html>

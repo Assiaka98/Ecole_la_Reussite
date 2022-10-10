@@ -1,15 +1,5 @@
 <?php
- try
-{
-	// On se connecte à MySQL
-	$pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite;charset=utf8','UBUNTU','mamy');
-  
-}
-catch(Exception $e)
-{
-	// En cas d'erreur, on affiche un message et on arrête tout
-        die('Erreur : '.$e->getMessage());
-}
+   include('inclusion/BD.inc.php');
 
 ?>
 
@@ -29,9 +19,8 @@ catch(Exception $e)
         <button ><a href="inscrip_employes.php" >Ajouter</a></button>
     </div>
     <?php
-        echo '<table border= 2px> <tr  style="background:#0096D7; color:white; ">';  
- 
-   
+        echo '<table border= 2px> <tr  style="background:#0096D7; color:white; ">';
+           
       echo '<th >identifiant</th>';
      echo '<th >passeword</th>';
     echo '<th >nom</th>';
@@ -85,6 +74,7 @@ echo '</tr>';
       $modifier=$row['modifier'];
     
       if ($supprimer==0) {
+        
         echo '<tr>
         <th>'.$ID.'</th>
         <td>'.$passeword.'</td>
@@ -99,18 +89,21 @@ echo '</tr>';
         <td>'.$lieu_naissance.'</td>
         <td>'.$date_soumission.'</td>
         <td>'.$sexe.'</td>
+        
         <td>
   
-        <button ><a href="supemploye.php?supprimerid='.$ID.'" >Supprimer</a></button>
+        <button style="background:red;"><a href="supemploye.php?supprimerid='.$ID.'" >Supprimer</a></button>
         </td>
         <td>
-        <button ><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
+        <button style="background:yellow;"><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
         </td>
     
       </tr>';
+    
   
       }
     }
+       
     
     ?>
   </tbody>
