@@ -36,12 +36,6 @@ body{
     flex-wrap: wrap; 
     background-image: url(ecole.);
 }
-#supprimer{
-    background-color: red;
-}
-#modifier{
-    background-color: blue;
-}
 
 .box{
     margin-top: 2px;
