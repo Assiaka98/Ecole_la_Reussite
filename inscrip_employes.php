@@ -51,7 +51,41 @@ catch(Exception $e)
                  VALUES(?,?,?,?,?,?,?,?,?,?,?,?)");
                 $ins->execute(array($passeword,$nom,$prenom,$numero,$email,$adresse,$profession,$nationalite,$date_naissance,$lieu_naissance,$date_soumission,$sexe));
                ; }}
-               }   
+               } 
+               
+
+$message="";
+
+    if(isset($_POST['email'],$_POST['passeword']))
+    {
+
+$user = trim($_POST['email']);
+$pass = trim($_POST['passeword']);
+$profession = trim($_POST['profession']);
+try{
+$sth = $pdo->prepare(" SELECT * FROM employe WHERE email !='".$user."' AND passeword != '".$pass."' AND profession != '".$profession."'"); 
+$sth->execute();
+$ins = $sth->fetchAll(PDO::FETCH_ASSOC); 
+if(count($ins) !==0){        
+  $message="Vous n'êtes pas dans la base de données, inscrivez-vous";
+    }
+    else{
+
+        if($profession=='professeur'){
+            header("location:profil/professeur.php");
+            
+
+        }
+        else if($profession=='secretaire'){
+            header("location:profil/secretaire.php");
+        }
+    }
+
+
+}
+catch(PDOException $e){ echo ("Erreur:".$e->getMessage());}
+ }
+  
 
 ?>
 
