@@ -13,16 +13,17 @@
     <header>
         <div class="header">
             <nav>
+           
                 <ul class="menu">
                     <img src=" ../inclusion/REUSSITE.jpg" alt="image simplon" class="z">
-                    <li><a href="">Contact</a></li>
+                    <li class="contact"><a href="">Contact</a></li>
                     <li><?=$btn1?></li>
                     <li><?=$btn2?></li>
                     <li><?=$btn3?></li>
                     <li><?=$btn4?></li>
                     <li><?=$btn5?></li>
                     <li><?=$btn6?></li>
-                    
+                    <li class="contact" ><a href="#" class="active">Accueil</a></li>
                     
                 </ul>
             </nav>
@@ -55,7 +56,7 @@
         width: 120px;
         height: 40px;
     
-        box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        
         color:rgb(22, 22, 22);
         text-decoration: none;
         border-radius: 5px;
@@ -67,6 +68,25 @@
         justify-content: center;
         
        
+    }
+    .li:hover{box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 17px;
+        color:blue;
+        background: yellow;
+    }
+    .contact{box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+        color:rgb(22, 22, 22);
+        text-decoration: none;
+        border-radius: 5px;
+        background: #f5f6f8;
+        padding-top: 5px;
+        cursor: pointer;
+        display: flex;
+        font-size: 15px;
+        justify-content: center;
+        width: 100px;
+        height: 20px;
+        margin-top: 36px;
     }
     
     *{

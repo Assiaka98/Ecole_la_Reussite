@@ -4,5 +4,5 @@ $pdo = new PDO('mysql:host=localhost;dbname=Ecole_de_la_Reussite','UBUNTU','mamy
 (PDO::ATTR_ERRMODE=>PDO::ERRMODE_EXCEPTION));
 $contenu = '';
 
-//require_once('fonction.inc.php')//
+include('fonction.inc.php');
 
