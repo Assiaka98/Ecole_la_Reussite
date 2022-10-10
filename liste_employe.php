@@ -45,6 +45,7 @@ catch(Exception $e)
    echo '<th scope="col">date_soumission</th>';
    echo '<th >sexe</th>';
    echo '<th >Actions</th>';
+   echo '<th >Actions</th>';
   
   
     
@@ -83,6 +84,7 @@ echo '</tr>';
       $date_soumission=$row['date_soumission'];
       $sexe=$row['sexe'];
       $supprimer=$row['supprimer'];
+      $modifier=$row['modifier'];
     
       if ($supprimer==0) {
         echo '<tr>
@@ -102,7 +104,8 @@ echo '</tr>';
         <td>
   
         <button ><a href="supemploye.php?supprimerid='.$ID.'" >Supprimer</a></button>
-
+        </td>
+        <td>
         <button ><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
         </td>
     
