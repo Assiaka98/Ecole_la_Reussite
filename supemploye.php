@@ -16,6 +16,7 @@ if (isset($_GET['supprimerid'])) {
     $ins->execute();
     if($ins){
        header('location:liste_employe.php');
+       echo 'voulez-vous supprimer cette donnée?';
     }
 }
 ?>

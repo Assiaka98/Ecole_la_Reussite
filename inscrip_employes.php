@@ -82,7 +82,7 @@ catch(Exception $e)
 <input type="text" placeholder="entrer votre prenom" id="prenom" name="prenom" ></div>
 <span id="error2"></span>
 <div> <label for="TELEPHONE"><h4>NUMERO</h4></label>
-<input type="nombre" placeholder="telephone" id="telephone" name="numero" ></div>
+<input type="number" placeholder="telephone" id="telephone" name="numero" ></div>
 <span id="error3"></span>
 <div> <label for="EMAIL"><h4>EMAIL</h4></label>
 <input type="email" placeholder="email" id="email" name="email" ></div>
