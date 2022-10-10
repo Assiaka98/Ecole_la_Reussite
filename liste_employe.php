@@ -19,7 +19,8 @@ catch(Exception $e)
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <
+    <link rel="stylesheet" href="inclusion/CSS/style.css">
+  
 
     <title>Liste Employe</title>
 </head>
@@ -44,11 +45,8 @@ catch(Exception $e)
    echo '<th scope="col">lieu_naissance</th>';
    echo '<th scope="col">date_soumission</th>';
    echo '<th >sexe</th>';
-   echo '<th >Actions</th>';
-   echo '<th >Actions</th>';
-  
-  
-    
+    echo '<th >Actions</th>';
+   echo '<th >Actions</th>';  
 echo '</tr>';
   
    
