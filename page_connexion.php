@@ -67,7 +67,7 @@ catch(PDOException $e){ echo ("Erreur:".$e->getMessage());}
     
         <div class="description">
             
-            <h1>bienvenue dans votre page de connexion</h1><br>
+            <h1>CONNEXION EMPLOYÉ</h1><br>
             
             </div>
             <div class="container">

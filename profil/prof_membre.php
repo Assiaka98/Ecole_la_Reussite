@@ -72,7 +72,7 @@
     .li:hover{box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
         font-size: 17px;
         color:blue;
-        background: yellow;
+        background: #04baf6;
     }
     .contact{box-shadow: 5px 6px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
         color:rgb(22, 22, 22);

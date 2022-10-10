@@ -1,6 +1,8 @@
-<?php require_once("inclusion/bd.inc.php"); ?>
+<?php  ?>
 
 <?php
+
+require_once("inclusion/BD.inc.php");
 
 if(isset($_GET['action']) && $_GET['action']== "deconnexion")
 {
@@ -9,7 +11,7 @@ if(isset($_GET['action']) && $_GET['action']== "deconnexion")
 
 if(eleveEstConnecte())
 {
-    header("location:profil_eleve.php");
+    header("location:profil/profil_eleve.php");
 }
 
 
@@ -45,28 +47,53 @@ if(eleveEstConnecte())
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="inclusion/CSS/connexion.css">
   <title>Document</title>
-</head>
-<body>
-<?php require_once("inclusion/header.inc.php"); ?>
-<?php echo $contenu ;?>
-  <div class="container">
+  </head>
+<body class="general" >
+ 
+ 
+<header>
+        <div class="header">
+            <nav>
+                <ul class="menu">
+                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
+                    <li class="li"><a href="">Contact</a></li>
+                   
+                    <li class="li" ><a href="#" class="active">Accueil</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+    
+        <div class="description">
+            
+            <h1>CONNEXION ELEVE</h1><br>
+            
+            </div>
+            <div class="container">
     <form method="POST" action="">
-      <p>
-        <label for="mail">Mail</label><br>
-        <input type="email" id="pseudo" name="mail" maxlength="20" class="case"placeholder="Votre email"title="Carracteres accepte a-zA-Z0-9-_." required="required"><br>
-      </p><br>
-      <p>
-          <label for="mdp">Mot de Passe</label><br>
-          <input type="password" id="mdp" name="mdp" class="case" required="required"><br>
-        </p><br>
-        <p>
+    <label for="pseudo ">Email</label> <br>
+        <input type="text" name="email" id="email" required placeholder="saisir votre mail" class="case"><br><br>
+        <label for="nom ">Mot de pass</label><br>
+        <input type="password" name="mdp" id="pass" required placeholder="Mot de pass" class="case"><br><br>
           <input type="submit" value="Se connecter" class="btn" >
-        </p>
+       
       </form> 
-  </div>
-<div class="clear"></div>
-</body>
-</html>
+  
+     
+ </div>
 
-<?php require_once("inclusion/footer.inc.php"); ?>
+
+</div> 
+
+<footer><p>© Copyright Simplon. Designed and Developed by <strong>UBUNTU_GROUPE</strong></p></footer>
+
+</main>
+
+
+    </body>
+</html>
