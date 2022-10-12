@@ -35,7 +35,7 @@
             <div>
             <h1>BIENVENUE A L'ECOLE DE LA REUSSITE</h1>
             <p class="tex">
-            <img src="inclusion/ELEVE3.jpg" alt="">  
+            <!--<img src="inclusion/ELEVE3.jpg" alt="">  -->
             </p>
             </div>
             <div class="a">

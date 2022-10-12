@@ -182,11 +182,11 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-   margin-bottom: 800px;
+   margin-top: 220px;
    
 }
 body{
-    margin: 0;
+    
 }
 .description{
 display: flex;

@@ -48,8 +48,9 @@
             
     </main>
     <script defer type="text/javascript" src="inclusion/formulaire.js"></script> 
-    <footer><p>© Copyright Simplon. Designed and Developed by <strong>UBUNTU_GROUPE</strong></p></footer>
+    
 </body>
+<footer><p>© Copyright Simplon. Designed and Developed by <strong>UBUNTU_GROUPE</strong></p></footer>
 </html>
 
 <style>.li{
@@ -179,15 +180,17 @@ footer{
     background-color: black;
     width: 100%;
     height: 100px;
-    margin: 0;
+    margin-top: 630px;
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: 0;
 }
 body{
+    
     margin: 0;
     background-image: url("../inclusion/connexion.jpg");
+    background-size: cover;
 }
 .description{
     display: flex;
