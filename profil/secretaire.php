@@ -1,6 +1,6 @@
 <?php
 
-   include('../inclusion/BD.inc.php');
+   include('../iinclusion/BD.inc.php');
 
 
 $btn1= "<a class=\"li\" href=\"\">DECONNEXION</a>";

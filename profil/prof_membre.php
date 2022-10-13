@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="">
+    <script src="p.js"></script>
+
     <title>Document</title>
 </head>
 <body>
@@ -15,7 +17,7 @@
             <nav>
            
                 <ul class="menu">
-                    <img src=" ../inclusion/REUSSITE.jpg" alt="image simplon" class="z">
+                    <img src="../inclusion/REUSSITE.jpg" alt="image simplon" class="z">
                     <li class="contact"><a href="">Contact</a></li>
                     <li><?=$btn1?></li>
                     <li><?=$btn2?></li>
@@ -23,7 +25,7 @@
                     <li><?=$btn4?></li>
                     <li><?=$btn5?></li>
                     <li><?=$btn6?></li>
-                    <li class="contact" ><a href="#" class="active">Accueil</a></li>
+                    <li class="contact" ><a href="page_accueuil.php" class="active">Accueil</a></li>
                     
                 </ul>
             </nav>
@@ -34,17 +36,10 @@
         <div class="description">
             <div>
             <h1><?=$bienvenue?></h1>
-            <p class="tex">
-            
-            </p>
-            </div>
-            <div class="a">
-                <div>
-                    <ig src="inclusion/.jpg" alt="">
-                    <h6>Reussir est<br>Un devoir<br></h6>
-                </div>
-            </div>
-            </div>
+            <div class="lieu">
+                    <img src="ELEVE2.jpg" width="100%" height="200px" alt="" id="slide">
+                 
+     </div>
             
     </main>
     <script defer type="text/javascript" src="inclusion/formulaire.js"></script> 
@@ -56,8 +51,6 @@
 <style>.li{
         width: 120px;
         height: 40px;
-    
-        
         color:rgb(22, 22, 22);
         text-decoration: none;
         border-radius: 5px;
@@ -104,15 +97,14 @@
     background-color:  #5A87BC;
     height: 100px;
     font-weight: bold;
-    
     position: fixed;
     width: 100%;
     
 }
+
 nav ul li{
     list-style-type: none;
     display: inline-block;
-
     margin-top: 25px;
     margin-right: 25px;
 }
@@ -123,9 +115,6 @@ nav ul li{
     height: 75px;
     margin-top: 15px;
 }
-    
-
-
 .menu li{
     float: right;
     padding: 15px;
@@ -148,19 +137,13 @@ h1{
     text-align: justify;
 }
 img{
-    width: 1631px;
+    width:100%;
     height: 659px; 
-    border-radius: 25px;
+    border-radius: 5px;
 }
 .a{
     
-    display: flex;
-    
-    
-    
-    
-   
-    
+    display: flex;  
 }
 h6{
     color: white;
@@ -173,14 +156,11 @@ p{
 }
 main{
     width: 100%;
-    padding-top: 150px;
-    
+   
 }
 footer{
     background-color: black;
-    width: 100%;
-    height: 100px;
-    margin-top: 630px;
+    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -189,9 +169,9 @@ footer{
 body{
     
     margin: 0;
-    background-image: url("../inclusion/connexion.jpg");
-    background-size: cover;
+    padding: 0;
 }
 .description{
     display: flex;
+    justify-content: center;
 }</style>

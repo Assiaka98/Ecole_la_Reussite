@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="inclusion/CSS/page_accueil.css">
+    <script src="page.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -17,11 +18,11 @@
         <div class="header">
             <nav>
                 <ul class="menu">
-                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
+                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z" >
                     <li class="li"><a href="">Contact</a></li>
                    
-                    <li class="li"><a href="interf_employe.php">employe</a></li>
-                    <li class="li"><a href="inscrip_employes.php">eleve</a></li>
+                    <li class="li"><a href="profil/interf_employe.php">employe</a></li>
+                    <li class="li"><a href="page_connexion_eleve.php">eleve</a></li>
                     <li class="li"><a href="#">information</a></li>
                     <li class="li" ><a href="#" class="active">Accueil</a></li>
                     
@@ -41,19 +42,29 @@
             <div class="a">
                 
             </div>
-
-            
             </div>
-            <div>
-                    <ig src="inclusion/ELEVE4.jpg" alt="">
+            <div class="lieu">
+                    <img src="inclusion/ELEVE2.jpg" width="50%" height="400px" alt="" id="slide">
                     <h6>Reussir est<br>Un devoir<br></h6>
-                </div>
+                    <div> <p>Bonjour à tous,<br>
+
+Je suis heureux aujourd’hui de vous adresser ces quelques mots. 
+Je pense tout d’abord à tous ceux qui nous rejoignent. Les nouveaux élèves, les nouveaux personnels, 
+les nouveaux parents. Qu’ils se sentent accueillis dans notre environnement, à l'Ecole de la réussite.
+
+
+Je saisi l’occasion pour remercier l’ensemble des parents d'eleves et le personnel de l'ecole.
+ L’établissement avec l’ensemble de ses instances a fait preuve de solidité, de force et de cohésion. 
+ Dans ce contexte particulier nous avons tous les atouts pour réussir cette année scolaire.</p>
+                    </div>
+                 </div>
             
     </main>
 
-    <footer><p>© Copyright Simplon. Designed and Developed by <strong>UBUNTU_GROUPE</strong></p></footer>
+    <footer>
+        <div class="foot">
+        <b>© Copyright Simplon. Designed and Developed by <strong>UBUNTU_GROUPE</strong></b>
+        </div>
+    </footer>
 </body>
-
-
-
 </html>

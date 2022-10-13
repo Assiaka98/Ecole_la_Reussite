@@ -1,0 +1,47 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+    
+h1{
+    color: #5A87BC;
+    text-align: center;
+}
+
+img{
+ border-radius: 15px;
+}
+
+h6{
+    color: white;
+    font-size: 18px;
+}
+b{
+    color: white;
+}
+.lieu{
+    display: flex;
+    justify-content: center;
+    
+}
+
+main{
+    width: 100%;
+    padding-top: 150px;
+    
+}
+footer{
+    background-color: black;
+    width: auto;
+    height: 50px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-bottom: 0px;
+}

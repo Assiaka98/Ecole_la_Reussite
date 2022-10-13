@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
 }
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 .active
 {width: auto;
     height: auto;
@@ -56,26 +61,28 @@ h1{
     text-align: justify;
 }
 img{
-    width: 1631px;
-    height: 659px; 
-    border-radius: 25px;
+
+    border-radius: 15px;
 }
 .a{
     
-    display: flex;
-    
-    
-    
-    
-   
+    display: flex; 
     
 }
 h6{
     color: white;
     font-size: 18px;
 }
-p{
+b{
     color: white;
+}
+.lieu{
+    display: flex;
+    justify-content: center;
+    
+}
+p{
+    color: black;
     font-size: 22px;
 
 }
@@ -84,20 +91,18 @@ main{
     padding-top: 150px;
     
 }
-footer{
+
+.foot{
     background-color: black;
     width: auto;
-    height: 100px;
+    height: 50px;
     margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
    margin-bottom: 0px;
 }
-body{
-    margin: 0;
-    background-image: url("../connexion.jpg");
-}
+
 .description{
     display: flex;
 }
