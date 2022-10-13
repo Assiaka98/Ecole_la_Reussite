@@ -49,8 +49,8 @@
 </html>
 
 <style>.li{
-        width: 120px;
-        height: 40px;
+        width: 100px;
+        height: 30px;
         color:rgb(22, 22, 22);
         text-decoration: none;
         border-radius: 5px;
@@ -58,7 +58,7 @@
         padding-top: 5px;
         cursor: pointer;
         display: flex;
-        font-size: 15px;
+        font-size: 12px;
         justify-content: center;
         
        
@@ -78,8 +78,8 @@
         display: flex;
         font-size: 15px;
         justify-content: center;
-        width: 100px;
-        height: 20px;
+        width: 90px;
+        height: 15px;
         margin-top: 36px;
     }
     
