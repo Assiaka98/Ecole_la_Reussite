@@ -24,7 +24,7 @@
                     <li class="li"><a href="profil/interf_employe.php">employe</a></li>
                     <li class="li"><a href="page_connexion_eleve.php">eleve</a></li>
                     <li class="li"><a href="#">information</a></li>
-                    <li class="li" ><a href="#" class="active">Accueil</a></li>
+                    <li class="li" ><a href="page_accueuil.php" class="active">Accueil</a></li>
                     
                 </ul>
             </nav>
@@ -49,6 +49,7 @@
                     <img src="inclusion/CSS/ecole.jpg" height="650px" alt="" id="slide">
 <h6>Reussir est<br>Un devoir<br></h6>
                     <div> <p>Bonjour à tous,<br>
+
 
 Je suis heureux aujourd’hui de vous adresser ces quelques mots. 
 Je pense tout d’abord à tous ceux qui nous rejoignent. Les nouveaux élèves, les nouveaux personnels, 
