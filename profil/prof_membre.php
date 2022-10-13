@@ -25,7 +25,7 @@
                     <li><?=$btn4?></li>
                     <li><?=$btn5?></li>
                     <li><?=$btn6?></li>
-                    <li class="contact" ><a href="page_accueuil.php" class="active">Accueil</a></li>
+                    <li class="contact" ><a href="../page_accueuil.php" class="active">Accueil</a></li>
                     
                 </ul>
             </nav>

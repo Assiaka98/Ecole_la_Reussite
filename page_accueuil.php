@@ -44,7 +44,8 @@
             </div>
             </div>
             <div class="lieu">
-            <h6>Reussir est<br>Un devoir<br></h6>
+                    <img src="inclusion/CSS/ecole.jpg" height="450px" alt="" id="slide">
+                    <h6>Reussir est<br>Un devoir<br></h6>
                     <div> <p>Bonjour à tous,<br>
 
 Je suis heureux aujourd’hui de vous adresser ces quelques mots. 
