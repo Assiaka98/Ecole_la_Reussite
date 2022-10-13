@@ -82,12 +82,12 @@ b{
 .lieu{
     display: flex;
     justify-content: center;
-    height: 450px;
+    height: 440px;
     
 }
 p{
     color: black;
-    font-size:25px;
+    font-size:28px;
 
 }
 main{

@@ -18,7 +18,10 @@ CREATE TABLE `eleve` (
   `Montant` int(50) DEFAULT NULL,
   `DateInscription` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
   `Niveau` enum('Primere','Secondaire') DEFAULT NULL,
-  `Classe` enum('CI','CP','CE1','CE2','CM1','CM2','sixième','cinquième','quatrième','troisième') DEFAULT NULL
+  `Classe` enum('CI','CP','CE1','CE2','CM1','CM2','sixième','cinquième','quatrième','troisième') DEFAULT NULL,
+   `supprimer` int(10) NOT NULL DEFAULT 0,
+    `modifier` int(10) NOT NULL DEFAULT 0
+
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -48,7 +51,8 @@ CREATE TABLE `employe` (
   `lieu_naissance` varchar(80) NOT NULL,
   `date_soumission` date NOT NULL,
   `sexe` varchar(80) NOT NULL,
-  `statue` int(20) NOT NULL DEFAULT 1
+  `supprimer` int(10) NOT NULL DEFAULT 0,
+   `modifier` int(10) NOT NULL DEFAULT 0
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --

@@ -46,8 +46,8 @@
             <div class="lieu">
 
 
-                    <img src="inclusion/CSS/ecole.jpg" height="650px" alt="" id="slide">
-<h6>Reussir est<br>Un devoir<br></h6>
+                    <img src="inclusion/CSS/ecole.jpg" height="440px" alt="" id="slide">
+                    <h6>Reussir est<br>Un devoir<br></h6>
                     <div> <p>Bonjour à tous,<br>
 
 
