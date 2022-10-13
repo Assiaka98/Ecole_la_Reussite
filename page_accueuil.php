@@ -18,7 +18,7 @@
         <div class="header">
             <nav>
                 <ul class="menu">
-                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z" >
+                    <img src="inclusion/REUSSITE.jpg" alt="" class="z" >
                     <li class="li"><a href="">Contact</a></li>
                    
                     <li class="li"><a href="profil/interf_employe.php">employe</a></li>
@@ -44,7 +44,7 @@
             </div>
             </div>
             <div class="lieu">
-                    <img src="inclusion/ELEVE2.jpg" width="50%" height="400px" alt="" id="slide">
+                    <img src="inclusion/CSS/ecole.jpg" height="400px" alt="" id="slide">
                     <h6>Reussir est<br>Un devoir<br></h6>
                     <div> <p>Bonjour à tous,<br>
 
