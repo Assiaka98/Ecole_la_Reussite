@@ -1,3 +1,60 @@
+.bout button{
+
+    width: 160px;
+  height: 40px;
+  margin: auto;
+  border-style: outset;
+  padding: 5px;
+  color:rgb(255, 251, 251);
+  text-decoration: none;
+  border-radius: 10px;
+  background: #5A87BC;
+  font: bold 20px arial,sans-serif;
+  cursor: pointer;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+ 
+
+}
+
+
+
+
+.box{
+
+  
+  width: 70%;
+  height: 150%;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+  
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background:linear-gradient(rgba(255, 255, 255, 0.747),rgba(252, 249, 249, 0.452));
+  border: 2px solid #5A87BC;
+
+}
+
+input{
+  width: 340px;
+  margin:  0;
+  background-color:whitesmoke;
+ color: black;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
+
+
+
+
 
 .nav{
     position: absolute;
@@ -43,20 +100,24 @@ height: 90px;
     
 }
 .container{
- margin-left: 32%;
-  padding-top: 20px;
+    
+    height: 120%;
+
+    background-size: cover;
+    
+    box-sizing: border-box;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap; 
+     background-color: none;
+     background: cover;
+ 
 font-size: 22px;
   
-    box-sizing: border-box;
-display: flex;
-justify-content: center;
-width: 43%;
-height: 55%;
+   
 
-border-bottom-left-radius: 15px;
-border-bottom-right-radius: 15px;
-background:linear-gradient(rgba(255, 255, 255, 0.747),rgba(252, 249, 249, 0.452));
-border: 2px solid #5A87BC;
+
+
 }
 
 .btn{
@@ -140,11 +201,7 @@ h1{
     margin: 50px 120px;
     text-align: justify;
 }
-img{
-    width: 1631px;
-    height: 659px; 
-    border-radius: 25px;
-}
+
 .a{
     
     display: flex;
@@ -185,9 +242,7 @@ footer{
    margin-top: 220px;
    
 }
-body{
-    
-}
+
 .description{
 display: flex;
 justify-content: center;
@@ -195,9 +250,9 @@ justify-content: center;
     border-top-left-radius: 15px;
 background: #5A87BC;
 border: 2px solid #5A87BC;
-width: 42.8%;
-    height: 7%;
-    margin-left: 32%;
+width: 70%;
+    height: 12%;
+    
     display: flex;
 }
 
@@ -220,3 +275,4 @@ width: 42.8%;
         margin-bottom: 10px;
        
     }
+
