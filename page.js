@@ -12,3 +12,8 @@ function changesSlide(sens){
 
 }
 setInterval("changesSlide(1)",1000);
+
+function envoie(){
+    var sup = document.getElementById("$alert");
+    alert('voulez-vous vraiment supprimer cette donnée?');
+}

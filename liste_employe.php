@@ -70,7 +70,8 @@
         
         <td>
   
-        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;"><a href="supp.php?supprimerid='.$ID.'" >Supprimer</a></button>
+        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;" OnClick="return(confirm(\'voulez-vous vraiment supprimer cet employé?\'))";>
+        <a href="supp.php?supprimerid='.$ID.'" >Supprimer</a></button>
         </td>
         <td>
         <button style="background:#146ee4;  width: 190px;  height: 25px; font-size: 15px; text-decoration: none;border-radius: 10px; "><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
