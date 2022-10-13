@@ -17,5 +17,5 @@ if (isset($_GET['supprimerid'])) {
     if($ins){
        header('location:liste_employe.php');
     }
-}
+} 
 ?>
