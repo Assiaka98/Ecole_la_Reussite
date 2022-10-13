@@ -10,11 +10,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="inclusion/CSS/styla.css">
-  
+    <link rel="stylesheet" href="inclusion/CSS/connexion.css">
 
-    <title>Liste Employe</title>
+    <title>Liste Eleve</title>
 </head>
-<body>
+<body class="general" >
+ 
+ <header>
+        <div class="header">
+            <nav>
+                <ul class="menu">
+                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
+                    <li class="li"><a href="">Contact</a></li>
+                   
+                    <li class="li" ><a href="page_accueuil.php" class="active">Accueil</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+    
+
+    <div classe="liste">
+
+
+
+
+
     <div >
         <button ><a href="inscrip_eleve.php" >Ajouter</a></button><br>
     </div>
@@ -70,10 +94,10 @@
         
         <td>
   
-        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;"><a href="supp.php?supprimerid='.$ID.'" >Supprimer</a></button>
+        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;"><a href="suppeleve.php?supprimerid='.$ID.'" >Supprimer</a></button>
         </td>
         <td>
-        <button style="background:#146ee4;  width: 190px;  height: 25px; font-size: 15px; text-decoration: none;border-radius: 10px; "><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
+        <button style="background:#146ee4;  width: 190px;  height: 25px; font-size: 15px; text-decoration: none;border-radius: 10px; "><a href="inscrip_eleve.php?modifierid='.$ID.'" >modifier</a></button>
         </td>
     
       </tr>';
@@ -86,5 +110,7 @@
     ?>
   </tbody>
 </table>
-</body>
+    </div>
+</main>
+  </body>
 </html>

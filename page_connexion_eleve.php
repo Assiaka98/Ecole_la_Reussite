@@ -60,7 +60,7 @@ if(eleveEstConnecte())
                     <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
                     <li class="li"><a href="">Contact</a></li>
                    
-                    <li class="li" ><a href="#" class="active">Accueil</a></li>
+                    <li class="li" ><a href="page_accueuil.php" class="active">Accueil</a></li>
                     
                 </ul>
             </nav>

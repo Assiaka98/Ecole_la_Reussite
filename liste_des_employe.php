@@ -35,7 +35,7 @@
 
     
     <div >
-        <button ><a href="inscrip_employes.php" >Ajouter</a></button><br>
+       
     </div>
     <?php
         echo '<table   border= 2px> <tr  style="background:#0096D7; color:white; ">';
@@ -44,11 +44,11 @@
     
   
    
-    $ins=$pdo->prepare("SELECT prenom,nom,numero,adresse,profession,supprimer,modifier FROM employe");
+    $ins=$pdo->prepare("SELECT prenom,nom,numero,adresse,profession FROM employe");
     $ins->execute();
 
 
-      $ins = $pdo->query("SELECT ID,prenom,nom,numero,adresse,profession,supprimer,modifier FROM employe");
+      $ins = $pdo->query("SELECT ID,prenom,nom,numero,adresse,profession FROM employe");
 
   for($i=0; $i < $ins->columnCount(); $i++)
 
@@ -71,10 +71,9 @@
       $adresse=$row['adresse'];
       $profession=$row['profession'];
      
-      $supprimer=$row['supprimer'];
-      $modifier=$row['modifier'];
+      
     
-      if ($supprimer==0) {
+      if ($ID !==0 ) {
         
         echo '<tr>
         <td >'.$ID.'</td>
@@ -87,13 +86,7 @@
         <td>'.$profession.'</td>
        
         
-        <td>
-  
-        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;"><a href="supp.php?supprimerid='.$ID.'" >Supprimer</a></button>
-        </td>
-        <td>
-        <button style="background:#146ee4;  width: 190px;  height: 25px; font-size: 15px; text-decoration: none;border-radius: 10px; "><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
-        </td>
+        
     
       </tr>';
     

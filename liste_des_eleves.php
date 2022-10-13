@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="inclusion/CSS/styla.css">
     <link rel="stylesheet" href="inclusion/CSS/connexion.css">
 
-    <title>Liste Employe</title>
+    <title>Liste Eleve</title>
 </head>
 <body class="general" >
  
@@ -33,9 +33,14 @@
     <main>
     
 
-    
+    <div classe="liste">
+
+
+
+
+
     <div >
-        <button ><a href="inscrip_employes.php" >Ajouter</a></button><br>
+        
     </div>
     <?php
         echo '<table   border= 2px> <tr  style="background:#0096D7; color:white; ">';
@@ -44,11 +49,11 @@
     
   
    
-    $ins=$pdo->prepare("SELECT prenom,nom,numero,adresse,profession,supprimer,modifier FROM employe");
+    $ins=$pdo->prepare("SELECT Nom,Prenom,Adresse,Téléphone FROM eleve");
     $ins->execute();
 
 
-      $ins = $pdo->query("SELECT ID,prenom,nom,numero,adresse,profession,supprimer,modifier FROM employe");
+      $ins = $pdo->query("SELECT id,Nom,Prenom,Adresse,Téléphone FROM eleve");
 
   for($i=0; $i < $ins->columnCount(); $i++)
 
@@ -62,38 +67,32 @@
   echo "</tr>";
   
     while ($row = $ins->fetch(PDO::FETCH_ASSOC)) {
-      $ID=$row['ID'];
-        $prenom=$row['prenom'];
-      $nom=$row['nom'];
+      $ID=$row['id'];
+        $nom=$row['Nom'];
+      $prenom=$row['Prenom'];
      
-      $numero=$row['numero'];
+      $adresse=$row['Adresse'];
      
-      $adresse=$row['adresse'];
-      $profession=$row['profession'];
+      $numero=$row['Téléphone'];
      
-      $supprimer=$row['supprimer'];
-      $modifier=$row['modifier'];
+     
+      
+      
     
-      if ($supprimer==0) {
+      if ($ID !==0 ) {
         
         echo '<tr>
         <td >'.$ID.'</td>
-        <td >'.$prenom.'</td>
-        <td>'.$nom.'</td>
-       
+        <td >'.$nom.'</td>
+        <td>'.$prenom.'</td>
+       <td>'.$adresse.'</td>
         <td>'.$numero.'</td>
         
-        <td>'.$adresse.'</td>
-        <td>'.$profession.'</td>
+        
+        
        
         
-        <td>
-  
-        <button classe="b1"style="background:#e41414; width: 190px;  height: 25px; font-size: 15px; border-radius: 10px; text-decoration: none;"><a href="supp.php?supprimerid='.$ID.'" >Supprimer</a></button>
-        </td>
-        <td>
-        <button style="background:#146ee4;  width: 190px;  height: 25px; font-size: 15px; text-decoration: none;border-radius: 10px; "><a href="inscrip_employes.php?modifierid='.$ID.'" >modifier</a></button>
-        </td>
+       
     
       </tr>';
     
@@ -105,6 +104,7 @@
     ?>
   </tbody>
 </table>
+    </div>
 </main>
   </body>
 </html>

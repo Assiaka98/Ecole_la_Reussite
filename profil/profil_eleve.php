@@ -3,7 +3,7 @@
    include('../inclusion/BD.inc.php');
 
 
-   $btn1= "<a class=\"li\" href=\"\">DECONNEXION</a>";
+   $btn1= "<a class=\"li\" href=\"../page_connexion_eleve.php\">DECONNEXION</a>";
    $btn2= "";
    $btn3= "";
    $btn4= "<a class=\"li\" href=\"\">NOTES</a>";
