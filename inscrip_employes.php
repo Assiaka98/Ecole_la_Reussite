@@ -1,7 +1,8 @@
-
  <?php
 include('inclusion/BD.inc.php');
-// Vérifier si le formulaire est soumis 
+$contenu="";
+
+  // Vérifier si le formulaire est soumis 
   @$passeword = $_POST['passeword'];
     @$nom = $_POST['nom']; 
      @$prenom = $_POST['prenom']; 
@@ -76,20 +77,47 @@ include('inclusion/BD.inc.php');
      }
 ?>
 
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="inclusion/CSS/style.css">
-
-    <title>INSCRIPTION EMPLOYE</title>
+    
+    <link rel="stylesheet" href="inclusion/CSS/stylo.css">
+   
+    <title>Document</title>
 </head>
-<body>
+<body class="general" >
+ 
+ 
+<header>
+        <div class="header">
+            <nav>
+                <ul class="menu">
+                    <img src="inclusion/REUSSITE.jpg" alt="image simplon" class="z">
+                    <li class="li"><a href="">Contact</a></li>
+                   
+                    <li class="li" ><a href="#" class="active">Accueil</a></li>
+                    
+                </ul>
+            </nav>
+        </div>
+        
+    </header>
+    <main>
+    
+
     <div class="container">
-   <div class="a"> <h1>INSCRIPTION EMPLOYE</h1></div>
-     
+ 
+    <div class="description">
+            
+            <h1>CONNEXION EMPLOYÉ</h1><br>
+            
+            </div>
 
        <form class="box" id="myForm" method="POST" action="">
 
@@ -138,6 +166,6 @@ include('inclusion/BD.inc.php');
 <?php if(!empty($message)){ ?>
         <div id="message"><?php echo $message ?></div>
         <?php } ?>
-
+</main>
 </body>
 </html>

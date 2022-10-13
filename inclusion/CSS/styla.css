@@ -1,0 +1,110 @@
+.bout button{
+
+    width: 160px;
+  height: 40px;
+  margin: auto;
+  border-style: outset;
+  padding: 5px;
+  color:rgb(255, 251, 251);
+  text-decoration: none;
+  border-radius: 10px;
+  background: #5A87BC;
+  font: bold 20px arial,sans-serif;
+  cursor: pointer;
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+ 
+
+}
+
+.a{
+ background-color:  #5A87BC;
+ width: 68%;
+ height: 60px;
+ display: flex;
+justify-content: center;
+border-radius: 20px;
+
+
+}
+body{
+   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; 
+
+  background:transparent;
+
+}
+
+.box{
+
+  width: 70%;
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.1));
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  column-gap: 40px;
+  box-sizing: border-box;
+  border-radius: 50px;
+}
+.container{
+   background: url('ins.jpg');
+  background-size: cover;
+margin: 15px;
+box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap; 
+ background-color: none;
+ background: cover;
+}
+input{
+  width: 340px;
+  margin:  0;
+  background-color:whitesmoke;
+ color: black;
+  padding: 10px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  box-sizing: border-box;
+  border-radius: 10px;
+  
+}
+h4{
+
+  color:white;
+}
+h1{
+  margin-top: -5px;
+  text-align: center;
+  color: white;
+
+  font-size: 40px;
+  line-height: 60px;
+  margin-left: -5px;
+
+}
+th{ height: 40px;
+width: 200px;}
+
+td{ height: 25px;
+  width: 190px;}
+  tr{font-size: 22px;
+  background-color: #a5f3e9;
+ 
+  
+}
+
+.b1{
+  background:rgb(252, 179, 44); 
+  width: 190px;  
+  height: 50px; 
+  font-size: 22px; 
+  text-decoration: none;
+}
+
