@@ -44,7 +44,7 @@
             </div>
             </div>
             <div class="lieu">
-                    <img src="inclusion/ELEVE2.jpg" width="50%" height="400px" alt="" id="slide">
+                    <img src="inclusion/ELEVE2.jpg" width="60%" height="30%" alt="" id="slide">
                     <h6>Reussir est<br>Un devoir<br></h6>
                     <div> <p>Bonjour à tous,<br>
 
